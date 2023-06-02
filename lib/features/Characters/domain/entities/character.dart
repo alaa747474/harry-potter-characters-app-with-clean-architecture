@@ -3,19 +3,19 @@ import 'package:equatable/equatable.dart';
 class Character extends Equatable {
   final String id;
   final String name;
-  final List<String?> alternateNames;
-  final String species;
-  final String gender;
-  final String house;
-  final String dateOfBirth;
+  final List<dynamic> alternateNames;
+  final String ?species;
+  final String ?gender;
+  final String ?house;
+  final String ?dateOfBirth;
   final int yearOfBirth;
-  final String actor;
-  final List<String?> alternateActors;
+  final String? actor;
+  final List<dynamic> alternateActors;
   final bool alive;
-  final String image;
+  final String ?image;
 
   const Character(
-      this.id,
+      this.id ,
       this.name,
       this.alternateNames,
       this.species,
@@ -23,7 +23,7 @@ class Character extends Equatable {
       this.house,
       this.dateOfBirth,
       this.yearOfBirth,
-      this.actor,
+      this.actor ,
       this.alternateActors,
       this.alive,
       this.image);

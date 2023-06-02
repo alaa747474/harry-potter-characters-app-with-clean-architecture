@@ -16,17 +16,17 @@ class CharacterModel extends Character {
       super.image);
   factory CharacterModel.fromJson(Map<String, dynamic> json) {
     return CharacterModel(
-        json['id'],
-        json['name'],
-        json['alternate_names'],
-        json['species'],
-        json['gender'],
-        json['house'],
-        json['dateOfBirth'],
-        json['yearOfBirth'],
-        json['actor'],
+        json['id']??0,
+        json['name']??"",
+        json['alternate_names']??'',
+        json['species']??'',
+        json['gender']??'',
+        json['house']??'',
+        json['dateOfBirth'] ??'',
+        json['yearOfBirth'] ??0,
+        json['actor'] ?? '',
         json['alternate_actors'],
-        json['alive'],
-        json['image']);
+        json['alive'] ??'',
+        json['image']?? '');
   }
 }
